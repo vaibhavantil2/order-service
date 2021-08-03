@@ -48,7 +48,7 @@ export class OrdersService {
       }
     }
 
-    this.logger.log(`Performed orders query: ${JSON.stringify(queryBuilder.getSql())}`)
+    this.logger.log(`Performed orders query: ${JSON.stringify(queryBuilder.getSql({paymentMode: order.paymentMode, paymentStatus: order.paymentStatus}))}`)
     
     return queryBuilder.getMany();
   }
