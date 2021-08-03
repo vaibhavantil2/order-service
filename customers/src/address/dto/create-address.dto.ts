@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsLongitude, IsLatitude, IsEnum } from "class-validator";
+import { IsNotEmpty, IsEntity, IsLongitude, IsLatitude, IsEnum } from "class-validator";
 import { StreetType } from "src/entities/street-type.enum";
 
 export class CreateAddressDTO {
@@ -14,6 +14,9 @@ export class CreateAddressDTO {
   
   @IsNotEmpty()
   buildingNumber: string;
+  
+  @IsEntity()
+  cancelOrderNumber: number;
   
   @IsNotEmpty()
   departmentNumber: string;
