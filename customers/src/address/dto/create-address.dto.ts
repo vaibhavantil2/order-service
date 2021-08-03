@@ -15,8 +15,8 @@ export class CreateAddressDTO {
   @IsNotEmpty()
   buildingNumber: string;
   
-  @IsEntity()
-  cancelOrderNumber: number;
+  @IsNotEmpty()
+  productFeedBack: string;
   
   @IsNotEmpty()
   departmentNumber: string;
