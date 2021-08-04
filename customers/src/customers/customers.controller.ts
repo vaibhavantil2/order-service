@@ -13,12 +13,7 @@ export class CustomersController {
   
   @Get()
   listCustomers(@Query(ValidationPipe) findCustomersDTO: FindCustomersDTO): Promise<Customer[]> {
-    return this.customersService.listCustomers(findCustomersDTO);
-  }
-  
-  @Post()
-  createCustomer(@Body(ValidationPipe) createCustomerDTO: CreateCustomerDTO): Promise<Customer> {
-    return this.customersService.createCustomer(createCustomerDTO);
+    return this.customersService.listCustomers(findCustomersDTOByAccountId);
   }
   
   @Put(':id')
@@ -32,6 +27,13 @@ export class CustomersController {
   @Delete(':id')
   deleteCustomer(@Param('id', ParseUUIDPipe)  customerId: string): Promise<void> {
     return this.customersService.deleteCustomer(customerId);
+  }
+  
+  
+  
+  @Post()
+  createCustomer(@Body(ValidationPipe) createCustomerDTO: CreateCustomerDTO): Promise<Customer> {
+    return this.customersService.createCustomer(createCustomerAccountId);
   }
   
   @Get(':id')
