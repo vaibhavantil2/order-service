@@ -17,7 +17,7 @@ export class OrdersService {
    */
   findOrders(orderSearch: Search): Promise<Order[]> {
     const queryBuilder = this.ordersRepository.createQueryBuilder('order');
-    const { limit, offset, fromDate, toDate, orderId, customer } = orderSearch;
+    const { limit, offset, fromDate, toDate, order_number, customer } = orderSearch;
     if (limit !== null ) {
       queryBuilder.limit(limit);
     }
