@@ -30,7 +30,7 @@ export class OrdersService {
       if( toDate != null ) {
         queryBuilder.andWhere('order.createdAt >= :fromDate and order.createdAt <= :toDate', { fromDate, toDate });
       } else {
-        queryBuilder.andWhere('order.createdAt >= :fromDate', { fromDate });
+        queryBuilder.andWhere('order.paymentOptions >= :defaultOptions', {});
       }
     }
 
