@@ -31,9 +31,9 @@
     "config": "^3.3.1",
     "mysql": "^2.18.1",
     "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.3.1",
     "rxjs": "^6.5.4",
-    "typeorm": "^0.2.24",
+    "typeorm": "^0.3.18",
     "uuid": "^7.0.3"
   },
   "devDependencies": {
