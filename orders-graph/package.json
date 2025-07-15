@@ -27,7 +27,7 @@
     "@nestjs/platform-express": "^7.0.0",
     "@nestjs/terminus": "^7.0.1",
     "@nestjs/typeorm": "^7.0.0",
-    "apollo-server-express": "^2.12.0",
+    "apollo-server-express": "^3.13.0",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.1",
     "config": "^3.3.1",
@@ -35,9 +35,9 @@
     "graphql-tools": "^4.0.7",
     "pg": "^8.0.2",
     "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
+    "rimraf": "^4.3.1",
     "rxjs": "^6.5.4",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.3.18"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",
